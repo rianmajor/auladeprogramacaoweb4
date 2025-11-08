@@ -9,13 +9,15 @@
 
 .dark-mode .projeto {
     background-color: #1f1f1f;
+    color: #ffffff;
 }
 
-.dark-mode a {
-    color: #bb86fc;
+.dark-mode .projeto a {
+    background-color: #bb86fc;
+    color: #121212;
 }
 
-.dark-mode button {
+.dark-mode button#toggle-dark {
     background-color: #bb86fc;
     color: #121212;
 }
