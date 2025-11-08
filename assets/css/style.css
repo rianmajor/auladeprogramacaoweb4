@@ -1,57 +1,113 @@
-/* Reset básico */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body e fonte */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #ffffff;
     color: #222222;
-    padding: 0 20px;
 }
 
+/* Links e foco */
 a {
     color: #1a73e8;
     text-decoration: none;
 }
 
-a:focus, button:focus {
+a:focus, button:focus, input:focus, textarea:focus {
     outline: 3px solid #ff9800;
 }
 
+/* Header e menu */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 15px;
+    gap: 20px;
 }
 
 nav a {
     font-weight: bold;
 }
 
-main section {
-    padding: 40px 0;
-    border-bottom: 1px solid #ccc;
-}
-
+/* Botão modo escuro */
 button#toggle-dark {
     padding: 5px 10px;
     cursor: pointer;
 }
 
+/* Seções */
+main section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Projetos */
+.projetos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.projeto {
+    background-color: #f0f0f0;
+    padding: 20px;
+    flex: 1 1 250px;
+    border-radius: 8px;
+}
+
+/* Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #155ab6;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     font-size: 0.9em;
     color: #555;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .projetos-grid {
+        flex-direction: column;
+    }
 }

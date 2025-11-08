@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Web</title>
+    <title>Portfólio de Rian Major</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark-mode.css">
 </head>
@@ -23,32 +23,54 @@
     <main>
         <section id="home">
             <h1>Bem-vindo ao meu Portfólio</h1>
-            <p>Sou estudante de tecnologia e este é meu site desenvolvido seguindo padrões profissionais e acessíveis.</p>
+            <p>Sou Rian Major, estudante de tecnologia. Este site segue padrões de acessibilidade e design moderno.</p>
         </section>
 
         <section id="sobre">
             <h2>Sobre</h2>
-            <p>Conteúdo sobre o autor, escrito de forma clara e acessível. Estrutura semântica correta e fácil de navegar com teclado.</p>
+            <p>Sou apaixonado por desenvolvimento web, criando sites modernos, acessíveis e responsivos.</p>
         </section>
 
         <section id="projetos">
             <h2>Projetos</h2>
-            <ul>
-                <li>Projeto 1 - descrição breve</li>
-                <li>Projeto 2 - descrição breve</li>
-                <li>Projeto 3 - descrição breve</li>
-            </ul>
+            <div class="projetos-grid">
+                <article class="projeto">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto 1.</p>
+                    <a href="#" target="_blank" rel="noopener">Ver Projeto</a>
+                </article>
+                <article class="projeto">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto 2.</p>
+                    <a href="#" target="_blank" rel="noopener">Ver Projeto</a>
+                </article>
+                <article class="projeto">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do projeto 3.</p>
+                    <a href="#" target="_blank" rel="noopener">Ver Projeto</a>
+                </article>
+            </div>
         </section>
 
         <section id="contato">
             <h2>Contato</h2>
-            <p>Entre em contato pelo e-mail:</p>
-            <a href="mailto:seuemail@email.com">seuemail@email.com</a>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>© 2025 Seu Nome</p>
+        <p>© 2025 Rian Major</p>
     </footer>
 
     <script src="assets/js/script.js"></script>

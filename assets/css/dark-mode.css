@@ -3,10 +3,19 @@
     color: #ffffff;
 }
 
+.dark-mode header, .dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .projeto {
+    background-color: #1f1f1f;
+}
+
 .dark-mode a {
     color: #bb86fc;
 }
 
-.dark-mode header, .dark-mode footer {
-    background-color: #1e1e1e;
+.dark-mode button {
+    background-color: #bb86fc;
+    color: #121212;
 }
