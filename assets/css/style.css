@@ -1,37 +1,37 @@
-/* Reset */
+/* style.css - Layout principal */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body e fonte */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #fefefe;
-    color: #222222;
+    color: #222;
 }
 
-/* Links e foco */
 a {
     color: #1a73e8;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-a:focus, button:focus, input:focus, textarea:focus {
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
     outline: 3px solid #ff9800;
     outline-offset: 2px;
 }
 
-/* Header e menu */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #4CAF50; /* Verde acolhedor */
+    background-color: #4CAF50;
     color: #fff;
     border-radius: 0 0 15px 15px;
 }
@@ -44,10 +44,9 @@ nav ul {
 
 nav a {
     color: #fff;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-/* Botão modo escuro */
 button#toggle-dark {
     padding: 5px 10px;
     cursor: pointer;
@@ -55,14 +54,13 @@ button#toggle-dark {
     color: #4CAF50;
     border: none;
     border-radius: 8px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 button#toggle-dark:hover {
     background-color: #e0e0e0;
 }
 
-/* Seções */
 main section {
     padding: 60px 20px;
     border-bottom: 1px solid #ddd;
@@ -72,7 +70,6 @@ main section {
     background: linear-gradient(120deg, #e0f7fa, #fff9c4);
 }
 
-/* Projetos */
 .projetos-grid {
     display: flex;
     flex-wrap: wrap;
@@ -80,12 +77,12 @@ main section {
 }
 
 .projeto {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 20px;
     flex: 1 1 250px;
     border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    transition: transform .3s;
 }
 
 .projeto:hover {
@@ -105,7 +102,6 @@ main section {
     background-color: #388E3C;
 }
 
-/* Contato */
 form {
     display: flex;
     flex-direction: column;
@@ -121,35 +117,32 @@ input, textarea, button {
     border: 1px solid #ccc;
 }
 
-button[type="submit"] {
+button[type=submit] {
     background-color: #4CAF50;
-    color: white;
+    color: #fff;
     border: none;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-button[type="submit"]:hover {
+button[type=submit]:hover {
     background-color: #388E3C;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    font-size: 0.9em;
+    font-size: .9em;
     color: #555;
     background-color: #eee;
     border-radius: 15px 15px 0 0;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
+@media(max-width:768px){
     nav ul {
         flex-direction: column;
         gap: 10px;
     }
-
     .projetos-grid {
         flex-direction: column;
     }
